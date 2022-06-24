@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(103, 103, 255);
+            color: white; /* Comentário no CSS se faz assim*/
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:darkorange
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--Comentário no HTML se faz assim-->
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um numero:'))
+        var n2 = Number.parseInt(window.prompt('Digite outro número:'))
+        // nas versões mais novas pode ser usado apenas o Number 
+        // o codigo ficaria assim:
+        // var n1 = Number(window.prompt('Digite um numero: '))
+        var s = n1 + n2
+        window.alert('A soma dos dois valores é igual a: ' + String(s))
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
