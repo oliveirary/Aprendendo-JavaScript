@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador - Exercicio Extra 2</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+        input{
+            font: normal 15pt Arial;
+            text-align: center;                      
+        }        
+        div#result{
+            margin-top: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculador</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="+" onclick="somar()">
+    <input type="button" value="-" onclick="subtrair()">
+    <input type="button" value="x" onclick="multiplicar()">
+    <input type="button" value="/" onclick="dividir()">    
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="result">Resultado</div>
+    <script>
+        var calc = document.getElementById('result')
+        var tn1 = document.getElementById('txtn1')
+        var tn2 = document.getElementById('txtn2')
+        var res = 0
+        function somar(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res = s
+            
+        }
+        function subtrair(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var sub = n1 - n2
+            res = sub 
+        }
+        function multiplicar(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var mult = n1 * n2
+            res = mult
+        }
+        function dividir(){
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var divid = n1 / n2
+            res = divid
+        }
+
+        function calcular(){
+            calc.innerHTML = 'O resultado da conta é: <b>' + res       
+        }
+    </script>
+
+</body>
+</html>
